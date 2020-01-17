@@ -1,0 +1,132 @@
+.post__header {
+    padding: 16px;
+}
+.post__user-info {
+    display: flex;
+    align-items: center;
+}
+.post__user-profile-pic {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post__user-profile-pic img {
+    width: 100%;
+    height: auto;
+}
+.post__user-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+}
+.post__user-text p {
+    font-size: 14px;
+    color: #262626;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    margin-left: -5px;
+    margin-bottom: 0;
+    margin-top: -7px;
+}
+.post__user-text small {
+    font-size: 11px;
+    color: #262626;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    margin-left: -5px;
+}
+.post__file {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post__file img {
+    max-width: 100%;
+    height: auto;
+}
+.post__footer {
+    padding: 0 15px;
+}
+.post__actions {
+    display: flex;
+}
+.post__btn {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+.like__big {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.like__big svg {
+    fill: rgba(255,255,255,0.7);
+    height: 80px;
+    width: auto;
+    animation-duration: 1s;
+    opacity: 0;
+}
+.post__file.active .like__big svg {
+    animation-name: heartAnimation;
+}
+@keyframes heartAnimation {
+    0%   {transform: scale(0); opacity: 0;}
+    25%  {transform: scale(2); opacity: 1;}
+    30%  {transform: scale(1);}
+    70%  {transform: scale(1);}
+    75%  {transform: scale(1.2); opacity: 1;}
+    100% {transform: scale(0); opacity: 0;}
+}
+.like {
+    background-size: 411px 393px;
+    background-position: -25px -319px;
+    height: 24px;
+    width: 24px;
+}
+.like.active {
+    background-size: 411px 393px;
+    background-position: 0 -319px;
+}
+.comment {
+    background-size: 411px 393px;
+    background-position: -125px -294px;
+    height: 24px;
+    width: 24px;
+}
+.direct {
+    background-size: 411px 393px;
+    background-position: -200px -294px;
+    height: 24px;
+    width: 24px;
+}
+.save {
+    background-size: 411px 393px;
+    background-position: -175px -344px;
+    height: 24px;
+    width: 24px;
+}
+.btn__save {
+    margin-left: auto;
+}
+.post__description {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+}

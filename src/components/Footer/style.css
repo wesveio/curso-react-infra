@@ -1,0 +1,53 @@
+#footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,.0975);
+    height: 44px;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+}
+.footer__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.ic-home {
+    background-size: 411px 393px;
+    background-position: -75px -319px;
+    height: 24px;
+    width: 24px;
+}
+.ic-home.active {
+    background-size: 411px 393px;
+    background-position: -50px -319px;
+    height: 24px;
+    width: 24px;
+}
+.ic-explore {
+    background-size: 411px 393px;
+    background-position: -225px -344px;
+    height: 24px;
+    width: 24px;
+}
+.ic-add {
+    background-size: 411px 393px;
+    background-position: -350px -319px;
+    height: 24px;
+    width: 24px;
+}
+.ic-activity {
+    background-size: 411px 393px;
+    background-position: -25px -319px;
+    height: 24px;
+    width: 24px;
+}
+.ic-profile {
+    background-size: 411px 393px;
+    background-position: -25px -369px;
+    height: 24px;
+    width: 24px;
+}

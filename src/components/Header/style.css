@@ -1,0 +1,31 @@
+#header {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    height: 44px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+#header .header__cam,
+#header .header__direct-message {
+    flex-basis: 32px;
+}
+
+#header .header__direct-message {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+#header .header__logo {
+    justify-content: center;
+}
+
+#header .header__logo img {
+    margin-top: 7px;
+}

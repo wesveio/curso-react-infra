@@ -1,0 +1,47 @@
+.stories {
+    display: flex;
+    align-items: stretch;
+    flex-shrink: 0;
+    padding: 15px;
+    background-color: rgba(250,250,250);
+    width: 100%;
+    overflow-x: auto;
+    touch-action: pan-x;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.stories::-webkit-scrollbar {
+    display: none;
+
+}
+
+.story__item  {
+    padding: 0 5px;
+    width: 80px;
+}
+
+.story__item .user__profile-pic {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(to right, #F58529, rgb(158, 99, 192));
+    padding: 2px;
+}
+
+.story__item .user__profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.story__item .user__profile-name {
+    max-width: 56px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
