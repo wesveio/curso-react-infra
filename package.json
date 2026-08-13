@@ -33,5 +33,11 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "overrides": {
+    "js-yaml": "^3.15.0"
+  },
+  "resolutions": {
+    "js-yaml": "^3.15.0"
+  }
 }
